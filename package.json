@@ -1,0 +1,17 @@
+{
+  "name": "poc-sparks",
+  "version": "0.1.0",
+  "description": "An API for ServiceNow Events and the Cisco Spark API integration",
+  "main": "pocsparks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Womack",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "request": "^2.65.0"
+  }
+}
