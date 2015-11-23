@@ -16,6 +16,9 @@ app.use(bodyParser.urlencoded({extended : false}));
 
 app.post('/sn-test', sparkController.pocStarter);
 app.put('/sn-test/:id', sparkController.pocUpdate);
+app.get('/sn-test/:atc', sparkController.queryPoc);
+app.delete('/sn-test/:atc', sparkController.popMember);
+app.delete('/rmrecord/:atc', sparkController.removeRecord);
 
 app.listen(5000, function() {
   console.log('Server Listening on Port 5000');
