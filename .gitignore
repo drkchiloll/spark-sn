@@ -3,3 +3,4 @@ Thumbs.db
 node_modules
 config.js
 .data/*
+public/files/*
