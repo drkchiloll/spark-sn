@@ -26,6 +26,11 @@ app.get('/sn-test/:atc', sparkController.queryPoc);
 app.delete('/sn-test/:atc', sparkController.popMember);
 app.delete('/rmrecord/:atc', sparkController.removeRecord);
 
+app.get('/fileupload/:filename', function(req, res) {
+  var fileName = req.params.filename;
+  res.sendFile(__dirname+'/public/files/' + fileName);
+});
+
 app.post('/pochooks', sparkController.handleHooks);
 
 app.listen(5000, function() {
