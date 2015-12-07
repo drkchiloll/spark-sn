@@ -15,8 +15,10 @@ var sparkServFactory = require('./lib/sparkService'),
 
 var app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended : false}));
+app
+  .use(bodyParser.json())
+  .use(bodyParser.urlencoded({extended : false}))
+  .use(express.static('./public'));
 
 app.post('/sn-test', sparkController.pocStarter);
 app.put('/sn-test/:id', sparkController.pocUpdate);
