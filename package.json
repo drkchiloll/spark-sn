@@ -11,7 +11,9 @@
   "dependencies": {
     "bluebird": "^2.10.2",
     "body-parser": "^1.14.1",
+    "csco-spark": "^1.0.1",
     "express": "^4.13.3",
+    "html-pdf": "^1.4.0",
     "nedb": "^1.4.0",
     "request": "^2.65.0"
   }
