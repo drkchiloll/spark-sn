@@ -14,6 +14,7 @@
     "csco-spark": "^1.0.7",
     "express": "^4.13.3",
     "html-pdf": "^1.4.0",
+    "moment": "^2.10.6",
     "nedb": "^1.4.0",
     "request": "^2.65.0"
   }
