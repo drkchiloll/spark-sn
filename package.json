@@ -9,6 +9,7 @@
   "author": "Sam Womack",
   "license": "ISC",
   "dependencies": {
+    "archiver": "^0.21.0",
     "bluebird": "^2.10.2",
     "body-parser": "^1.14.1",
     "csco-spark": "^3.0.9",
