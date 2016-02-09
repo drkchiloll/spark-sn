@@ -47,6 +47,8 @@ app.get('/fileupload/:filename', function(req, res) {
 app.post('/pochooksProd', sparkControllerProd.handleHooks);
 app.post('/pochooksDev', sparkControllerDev.handleHooks);
 
+app.post('/archiveHook', sparkControllerProd.archiveRoom);
+
 app.listen(5000, function() {
   console.log('Server Listening on Port 5000');
 });
