@@ -48,6 +48,10 @@ app.post('/pochooksProd', sparkControllerProd.handleHooks);
 app.post('/pochooksDev', sparkControllerDev.handleHooks);
 
 app.post('/archiveHook', sparkControllerProd.archiveRoom);
+app.get('/archives/:fn', (req, res) => {
+  var fn = req.params.fn;
+  res.sendFile(`${__dirname}/public/files/${fn}`);
+})
 
 app.listen(5000, function() {
   console.log('Server Listening on Port 5000');
